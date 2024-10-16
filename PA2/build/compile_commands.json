@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/jeff/Desktop/Fall2024/CPTS223/PA2/build",
+  "command": "/usr/bin/c++    -Wall -g -std=gnu++11 -o CMakeFiles/PA2.dir/main.cpp.o -c /home/jeff/Desktop/Fall2024/CPTS223/PA2/main.cpp",
+  "file": "/home/jeff/Desktop/Fall2024/CPTS223/PA2/main.cpp"
+},
+{
+  "directory": "/home/jeff/Desktop/Fall2024/CPTS223/PA2/build",
+  "command": "/usr/bin/c++    -Wall -g -std=gnu++11 -o CMakeFiles/PA2.dir/experimentFunctions.cpp.o -c /home/jeff/Desktop/Fall2024/CPTS223/PA2/experimentFunctions.cpp",
+  "file": "/home/jeff/Desktop/Fall2024/CPTS223/PA2/experimentFunctions.cpp"
+}
+]
