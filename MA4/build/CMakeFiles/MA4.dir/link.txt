@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -fopenmp -g CMakeFiles/MA4.dir/main.cpp.o -o MA4  -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/12 /usr/lib/gcc/x86_64-linux-gnu/12/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.a 
