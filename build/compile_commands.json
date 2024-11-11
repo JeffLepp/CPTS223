@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/jeff/Desktop/Fall2024/CPTS223/MA4/build",
+  "command": "/usr/bin/c++    -Wall -fopenmp -g -fopenmp -std=gnu++11 -o CMakeFiles/MA4.dir/main.cpp.o -c /home/jeff/Desktop/Fall2024/CPTS223/MA4/main.cpp",
+  "file": "/home/jeff/Desktop/Fall2024/CPTS223/MA4/main.cpp"
+}
+]
