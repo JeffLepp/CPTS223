@@ -35,24 +35,24 @@ private:
 	void percolateDown(unsigned int hole)
 	{
 		unsigned int child; // child node in question
-		T node = _items[hole];
+		T tmp = std::move(_items[hole]);
 
-		while (hole *2 < _items.size())
+		for ( ; hole *2 < _items.size(); hole = child)
 		{
-			child = hole*2; // the left child is double the index, and right is double + 1 as we learned in class
-			if (child + 1 < _items.size() && _items[child + 1] < _items[child]) {
-				child += 1; // Lchild becomes Rchild
+			child = hole*2; // the left child is double the index, and right is double + 1 
+			
+			if (child != _items.size() - 1 && _items[child + 1] < _items[child]) {
+            	++child; // right child
 			}
 
-			// Lchild in proper condition
-			if (node <= _items[child]) {
-				break;
+			// move child up
+			if (_items[child] < tmp) {
+				_items[hole] = std::move(_items[child]);
+			} else {
+            	break;
 			}
-
-			_items[hole] = _items[child];
-			hole = child;
-		}
-		_items[hole] = node;
+        }
+		_items[hole] = std::move(tmp);
 	}
 
 	/**
@@ -60,10 +60,16 @@ private:
 	 *  Used in inserting new nodes into the heap
 	 *  TODO: Implement percolateUp
 	 */
-	void percolateUp(T item)
-	{
-		// TODO
+	void percolateUp(const T& item) {
+		int hole = _items.size();  
+		_items.push_back(item);    
+
+		for (; item < _items[hole / 2]; hole /= 2) {
+			_items[hole] = std::move(_items[hole / 2]);
+		}
+		_items[hole] = item;
 	}
+
 
 	/********************** End Microassigment zone *********************/
 
