@@ -1,0 +1,3 @@
+/home/jeff/Desktop/Fall2024/CPTS223/PA3/build/CMakeFiles/PA3.dir
+/home/jeff/Desktop/Fall2024/CPTS223/PA3/build/CMakeFiles/edit_cache.dir
+/home/jeff/Desktop/Fall2024/CPTS223/PA3/build/CMakeFiles/rebuild_cache.dir
